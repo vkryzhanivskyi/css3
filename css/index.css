@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Anton'); :root {
+    --main-color: black; --secondary-color: orange; font-family: 'Anton', sans-serif;
+}
+body .clock{
+    font-size: 1.5rem;
+    text-align: right;
+    color: orange;
+    
+}
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+h1, h2, h3, p, div, nav {
+    margin: 0;
+    padding: 0;
+}
+
+header .logo {
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    text-align: right ;
+    margin: 20px 10px;
+}
+
+header .menu {
+    padding: 0;
+}
+
+header .menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+header .menu li {
+    display: inline;
+    list-style-type: none;
+}
+
+header .menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+header .menu li a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 550px) {
+    header nav {
+        display: flex;
+        align-items: center;
+    }
+
+    header nav .menu {
+        flex: 1;
+    }
+}
+
+header .banner {
+    background-image: url(../img/strongshop.jpg);
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner h1 {
+    color: var(--secondary-color);
+    font-size: 5rem;
+    font-family: 'Anton', sans-serif;
+    text-align: right;
+    display:flex;
+    justify-content:flex-end;
+    margin: 40px;
+    
+}
+.banner h2 {
+    color: var(--secondary-color);
+    font-size: 2.1rem;
+    font-family: 'Anton', sans-serif;
+    text-align: right;
+    display:flex;
+    justify-content:flex-end;
+    margin: 40px;
+    vertical-align:100px;
+}
+    
+header .banner {
+    margin-top: 20px;
+}
+
+.product-card {
+    border: 2px solid orange;
+    border-radius: 10px;
+}
+
+.product-card p {
+    padding: 0 5px;
+    text-align: center;
+    font-weight: bold;
+ 
+}
+
+.product-card img {
+    display: block;
+    width: 100%;
+}
+
+.product-card {
+ 
+  justify-content: space-around;
+}
+
+.product-card {
+    padding: 8px 32px;
+}
+
+@media (min-width: 360px) {
+    .product-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 660px) {
+    .product-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 980px) {
+    .product-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+header .banner .button-container {
+    margin-top: 20px;
+}
+
+.product-cards {
+    border: 1px solid green;
+}
+
+.product-cards h3, 
+.product-cards p {
+    padding: 0 5px;
+}
+
+.product-cards img {
+    display: block;
+    width: 100%;
+}
+
+.product-cards .button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-card .button-container .button {
+    padding: 8px 32px;
+}
+
+.button {
+    background-color: orange; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid orange;
+}
+
+.button:hover {
+    background-color: orange;
+    color: white;
+    
+    
+}
+@media (min-width: 360px) {
+    .product-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 660px) {
+    .product-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 980px) {
+    .product-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+.products {
+    text-decoration: none;
+}
